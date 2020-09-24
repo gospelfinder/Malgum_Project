@@ -1,0 +1,196 @@
+<!doctype html>
+
+<html lang="ko">
+	<head>
+		<title>맑음 디지털에이전시</title>
+		<meta charset="utf-8">
+		<link href="css/common.css" rel="stylesheet">
+		<link href="css/project.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<!-- skip navigation = dl 태그 '장애자 분들을 위한 태그임'-->
+		<dl id="access">
+			<dt>바로가기 및 건너뛰기 링크</dt>
+			<dd><a href="#contents">본문 바로가기</a></dd>
+			<dd><a href="#navigation">주메뉴 바로가기</a></dd>
+		</dl>
+		<hr>
+		
+	<div id="wrap" class="active">
+			<header>
+				<div class="gnb-layout">
+					<div class="tsidecont">
+					<div class="tsidecont-wrap">
+						<h1 class="logo"><a href="index.html"><img src="./images/mproject.jpg" alt=""></a></h1>
+						<ul class="menu">
+							<li><a href="login.html"><i class="fas fa-sign-in-alt"></i>로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+						</ul>
+					</div> 
+					</div> <!-- tsidecont end -->
+					<nav id="navigation" class="navi">
+					<h2 class="readonly">주 메뉴</h2>
+						<ul>
+							<li><a href="sub1.html">MALGUM</a></li>
+							<li><a href="sub2.html">What we do</a></li>
+							<li><a href="sub3.html">Portfolio</a></li>
+							<li><a href="sub4.html">Stories</a></li>
+							<li><a href="sub5.html">Contact</a></li>
+						</ul>
+					</nav> <!-- navi end -->
+				</div> <!-- gnb-layout end -->
+			</header>
+	
+				<div class="path-layout">
+				<div class="path-inner">
+					<p class="home"><a href="index.html"><i class="fas fa-home"></i><span class="hidden"></span></a></p>
+						<div class="group">
+							<p><a href="#">고객센터</a></p>
+						</div>
+						
+						<div class="group">
+							<p><a href="sub5.html">공지사항</a></p>
+							<ul class="sub1-depth2">
+								<li><a href="sub5.html">칼럼</a></li>
+								<li><a href="sub5.html">고객리뷰</a></li>
+								<li><a href="sub5.html">뉴스레터</a></li>
+								<li><a href="sub5.html">맑음소식</a></li>
+							</ul>
+						</div>
+						
+					<div class="group">
+						<p><a href="noticewrite.html">공지사항 글쓰기</a></p>
+					</div>
+					
+				</div>
+			</div> <!-- path-layout end -->
+			
+			<div class="sub-contents">
+				<section id="content" class="content-noticewrite">
+					<h2 id="stitle" class="stitle">공지사항 글쓰기</h2>
+				
+							<div class="sub-wrap">
+								<form name="notice" method="post" enctype="multipart/form-data" action="logincheck.html" onsubmit="return noticecheck()">	
+									<h2 class="readonly">입력은 제목, 첨부파일입니다</h2>
+										<fieldset>
+											<legend>공지사항입력폼</legend>
+												<p class="must">필수 입력 항목입니다</p>
+												<table class="notice-write">
+													<caption>공지사항입력</caption>
+													<colgroup>
+														<col width="20%">
+														<col width="*">
+													</colgroup>
+													<tr>
+														<th><label for="company"><p class="img-check">회사명</p></label></th>
+														<td><input type="text" name="company" id="company" class="company"></td>
+													</tr>
+													<tr>
+														<th><label for="charge"><p class="img-check">담당자</p></label></th>
+														<td><input type="text" name="charge" id="charge" class="charge"></td>
+													</tr>
+													<tr>
+														<th><label for="cellphone"><p class="img-check">휴대전화</p></label></th>
+														<td><input type="text" name="cellphone" id="cellphone" class="cellphone"></td>
+													</tr>
+													<tr>
+														<th><label for="email-address"><p class="img-check">이메일</p></label></th>
+														<td><input type="text" name="email-address" id="email-address" class="email-address"></td>
+													</tr>
+													<tr>
+														<th><label for="gsupport">정부지원산업</label></th>
+														<td><input type="text" name="gsupport" id="gsupport" class="gsupport"></td>
+													</tr>
+													<tr>
+														<th><label for="cont">상담내용</label></th>
+														<td><textarea name="cont" id="cont" class="cont"></textarea></td>
+													</tr>
+													<tr>
+														<th><label for="file">첨부파일</label></th>
+														<td><input type="file" name="pic" id="file"></td>
+													</tr>
+													<tr>
+														<td colspan="2" class="align-center">
+															<input type="submit" value="등록" class="btn">
+															<input type="button" value="취소" class="btn">
+														</td>
+													</tr>
+												</table>
+										</fieldset>
+								</form>
+							</div>
+				
+				</section>
+				<aside id="side">
+					<h2 class="title">공지사항</h2>
+						<ul class="side-menu">
+							<li class="active"><a href="sub5.html">공지사항</a></li>
+							<li><a href="sub5.html">칼럼</a></li>
+							<li><a href="sub5.html">고객리뷰</a></li>
+							<li><a href="sub5.html">뉴스레터</a></li>
+							<li><a href="sub5.html">맑음소식</a></li>
+						</ul>
+				</aside>
+			</div> <!-- sub-contents end -->
+			
+			<footer id="footer">
+				<div class="footer-inner">
+					<ul class="footer-banner">
+						<li class="one">
+							<h3><img src="./images/footer.jpg" alt=""></h3>
+						</li>
+						<li class="two">
+							<div class="siteinfo">
+								<address>
+									서울특별시 강남구 테헤란로 13길8-10, 7.8층 (역삼동, 동영빌딩) (06133)
+									<br>
+									전화번호. 02-2051-9551 &nbsp; 팩스. 02-2051-9552 &nbsp; 이메일. netstar@malgum.com
+									<br>
+									<span><strong>대표 박의성</strong></span>
+								</address>
+								<p class="copyright">Copyright &copy MALGUM Co., Ltd. All Rights Reserved.</p>
+							</div> <!-- siteinfo end -->
+						</li>
+						<li class="three">
+							<h3><span>고객지원</span></h3>
+								<p class="couns">02.2051.9551</p>
+								<p class="remote">평일 09:00 ~ 18:00 (주말/공휴일 제외)</p>
+						</li>
+					</ul> <!-- footer-banner end -->
+				</div> <!-- footer-inner end -->
+			</footer>
+	
+		<script>
+			$(document).ready(function() {
+				$(".tab-style > li > a").click(function() {
+					$(".tab-style > li").removeClass("active"); 
+					$(this).parent().addClass("active");
+				});
+				
+			$(".path-layout .path-inner .group p a").click(function() {
+					$(".sub1-depth2").toggle();
+				});
+			});
+		</script>
+		<script>
+			function noticecheck() {
+				if(notice.title.value=="") {
+					alert("제목입력");
+					notice.title.focus();
+					return false;
+				}
+				if(notice.cont.value=="") {
+					alert("내용입력");
+					notice.cont.focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+	
+	
+	
+	</body>
+</html>

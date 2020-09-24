@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="ko">
+	<head>
+		<title>맑음 디지털에이전시</title>
+		<meta charset="utf-8">
+		<link href="css/common.css" rel="stylesheet">
+		<link href="css/project.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<!-- skip navigation = dl 태그 '장애자 분들을 위한 태그임'-->
+		<dl id="access">
+			<dt>바로가기 및 건너뛰기 링크</dt>
+			<dd><a href="#contents">본문 바로가기</a></dd>
+			<dd><a href="#navigation">주메뉴 바로가기</a></dd>
+		</dl>
+		<hr>
+		
+	<div id="wrap" class="active">
+			<header>
+				<div class="gnb-layout">
+					<div class="tsidecont">
+					<div class="tsidecont-wrap">
+						<h1 class="logo"><a href="index.html"><img src="./images/mproject.jpg" alt=""></a></h1>
+						<ul class="menu">
+							<li><a href="login.html"><i class="fas fa-sign-in-alt"></i>로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+						</ul>
+					</div> 
+					</div> <!-- tsidecont end -->
+					<nav id="navigation" class="navi">
+					<h2 class="readonly">주 메뉴</h2>
+						<ul>
+							<li><a href="sub1.html">MALGUM</a></li>
+							<li><a href="sub2.html">What we do</a></li>
+							<li><a href="sub3.html">Portfolio</a></li>
+							<li><a href="sub4.html">Stories</a></li>
+							<li><a href="sub5.html">Contact</a></li>
+						</ul>
+					</nav> <!-- navi end -->
+				</div> <!-- gnb-layout end -->
+			</header>
+			<div class="visual-image">
+				<p class="login-image"><span class="intro-font30">회원가입</span>
+				<span class="intro-font20">Specialized in digital convergence, MALGUM</span></p>
+			</div>
+				<div class="path-layout">
+				<div class="path-inner">
+					<p class="home"><a href="index.html"><i class="fas fa-home"></i><span class="hidden"></span></a></p>
+						<div class="group">
+							<p><a href="login.html">로그인</a></p>
+						</div>
+						<div class="group">
+							<p><a href="join.html">회원가입</a></p>
+						
+							<ul class="sub1-depth2">
+								<li><a href="join.html">회원가입</a></li>
+								<li><a href="id-search.html">아이디찾기</a></li>
+								<li><a href="pw-search.html">비밀번호찾기</a></li>
+							</ul>
+							
+						</div>
+				</div>
+			</div> <!-- path-layout end -->
+			
+			<div class="sub-contents">
+				<section id="content">
+					<h2 id="stitle" class="stitle">회원가입</h2>
+				<div class="sub-wrap">
+								<div class="join-group">
+									<form name="join" action="">
+								<fieldset>
+									<legend>회원가입</legend>
+									<h2 class="readonly">회원가입 목록</h2>
+									<div class="join-index">
+										<ul>
+											<li>아이디</li>
+											<li>비밀번호</li>
+											<li>이름</li>
+											<li>전화번호</li>
+											<li>E-mail</li>
+										</ul>
+									
+								
+									
+									<ul>
+										<li><input type="text" name="id" placeholder="아이디 (필수)">&nbsp;&nbsp;&nbsp;<span class="idspan"><a href="#">중복확인</a></span></li>
+										<li><input type="password" name="pw" placeholder="비밀번호 (필수)"></li>
+										<li><input type="password" name="pw2" placeholder="비밀번호 확인 (필수)"></li>
+										<p>영문/숫자/특수문자 중 2가지 이상 포함 8~10자 까지</p>
+										<li><input type="text" name="name" placeholder="이름필수"></li>
+										<p>이름 또는 회사명을 입력해 주세요</p>
+										<li><input type="text" name="tel1" placeholder="연락처(필수)" class="tel"> - 
+											<input type="text" name="tel2" placeholder="연락처(필수)" class="tel"> -
+											<input type="text" name="tel3" placeholder="연락처(필수)" class="tel"></li>
+										<p>예) 02-123-1567 또는 010-1234-1234</p>
+										<li><input type="text" name="email1" class="email">&#64;
+											<input type="text" name="email2" class="email">
+										<select name="emailtype" class="email">
+											<option>직접입력</option>
+											<option value="naver.com">naver.com</option>
+											<option value="daum.net">daum.net</option>
+											<option value="gmail.com">gmail.com</option>
+										</select>
+										</li>
+										<p>문자, 이메일을 통한 상품 및 이벤트 정보 수신에 동의합니다.</p>
+										<li><input type="radio" name="agree" checked> 동의
+											<input type="radio" name="agree"> 미동의</li>
+										<li><input type="checkbox" name="yak1">이용약관<a href="#">전문보기</a>
+											<input type="checkbox" name="yak2">개인정보보기<a href="#">전문보기</a></li>
+									</ul>
+									<input type="button" value="가입하기" onClick="check();" style="cursor:pointer;" class="join-button">
+								
+								</div>
+								</fieldset>
+								
+								
+							</form>
+									
+								</div>
+							</div>
+				
+				</section>
+				
+			
+			
+			<aside id="side">
+					<h2 class="title">로그인</h2>
+						<ul class="side-menu">
+							<li><a href="login.html">로그인</a></li>
+							<li class="active"><a href="join.html">회원가입</a></li>
+							<li><a href="id-search.html">아아디찾기</a></li>
+							<li><a href="pw-search.html">비밀번호찾기</a></li>
+						
+						</ul>
+				</aside>
+			</div> <!-- sub-contents end -->
+			</div>
+			
+	
+			
+			<footer id="footer">
+				<div class="footer-inner">
+					<ul class="footer-banner">
+						<li class="one">
+							<h3><img src="./images/footer.jpg" alt=""></h3>
+						</li>
+						<li class="two">
+							<div class="siteinfo">
+								<address>
+									서울특별시 강남구 테헤란로 13길8-10, 7.8층 (역삼동, 동영빌딩) (06133)
+									<br>
+									전화번호. 02-2051-9551 &nbsp; 팩스. 02-2051-9552 &nbsp; 이메일. netstar@malgum.com
+									<br>
+									<span><strong>대표 박의성</strong></span>
+								</address>
+								<p class="copyright">Copyright &copy MALGUM Co., Ltd. All Rights Reserved.</p>
+							</div> <!-- siteinfo end -->
+						</li>
+						<li class="three">
+							<h3><span>고객지원</span></h3>
+								<p class="couns">02.2051.9551</p>
+								<p class="remote">평일 09:00 ~ 18:00 (주말/공휴일 제외)</p>
+						</li>
+					</ul> <!-- footer-banner end -->
+				</div> <!-- footer-inner end -->
+			</footer>
+	
+		<script>
+			$(document).ready(function() {
+				$(".tab-style > li > a").click(function() {
+					$(".tab-style > li").removeClass("active"); 
+					$(this).parent().addClass("active");
+				});
+				
+			$(".path-layout .path-inner .group p a").click(function() {
+					$(".sub1-depth2").toggle();
+				});
+			});
+		</script>
+	</body>
+</html>
